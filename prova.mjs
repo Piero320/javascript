@@ -1,12 +1,7 @@
-class Gioco_15 {
-constructor(larghezza,altezza){
-this.cornice = document.createElement("div")
-let stile_cornice = { border : "1px solid black", }
-this.cornice.style = stile_cornice
+function api() {
+fetch('https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits')
+.then(response => response.json())
+//.then(commits => alert(commits[0].author.login));
+.then(json =>  JSON.stringify(json))
+.then(s => alert(s))
 }
-
-visualizza () {
-document.appendChild(this.cornice)
-}
-}
- 
