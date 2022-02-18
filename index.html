@@ -1,49 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-<script src="prova.mjs"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-<style>
-body {
-text-align: center;
-
-}
-.bottone {
-margin-top: 50px;
-margin-left: 600px;
-}
-.paragrafo {
-margin: auto;
-border: 1px solid black;
-width: 500px;
-height: 500px;
-
-}
-</style>
-<script defer>
-function api() {
-let element = document.getElementById("paragrafo")
-fetch('https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits')
-.then(response => response.json())
- 
-.then(json => JSON.stringify(json[0]))
-
-.then(json => element.innerHTML = json)
-}
-
-</script>
-
-<div id = "paragrafo" class = "paragrafo"></div>
- 
-<button class = "bottone" onclick="api()"> clicca</button>
+    in costruzione
 </body>
 </html>
-
-
-
-
