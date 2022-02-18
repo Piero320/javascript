@@ -30,7 +30,7 @@ function api() {
 let element = document.getElementById("paragrafo")
 fetch('https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits')
 .then(response => response.json())
-//.then(commits => alert(commits[0].author.login));
+ 
 .then(json => JSON.stringify(json[0]))
 
 .then(json => element.innerHTML = json)
